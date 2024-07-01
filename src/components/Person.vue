@@ -8,32 +8,47 @@
   </div>
 </template>
 
-<script lang="ts">
-  export default {
-    name: 'Person',
-    setup() {
-      // 数据
-      let name= 'zhang san'
-      let age = '18'
-      let tel = '121212121'
+<!-- <script lang="ts"> -->
+  <!-- // export default {
+    // name: 'Person',
+    // setup() {
+    //   // 数据
+    //   let name= 'zhang san'
+    //   let age = '18'
+    //   let tel = '121212121'
 
 
-      // 方法
-      const changeName = () => {
-        name = 'wang wang'
-      }
-      const changeAge = () => {
-        age = '20'
-      }
-      const showTel = () => {
-        alert(tel)
-      }
-      return {
-        name, age, tel, changeName, changeAge, showTel
-      }
-    }
+    //   // 方法
+    //   const changeName = () => {
+    //     name = 'wang wang'
+    //   }
+    //   const changeAge = () => {
+    //     age = '20'
+    //   }
+    //   const showTel = () => {
+    //     alert(tel)
+    //   }
+    //   return {
+    //     name, age, tel, changeName, changeAge, showTel
+    //   }
+    // }
+  // }
+// </script> -->
+<script lang="ts" setup name="Person">
+  let name= 'zhang san'
+  let age = '18'
+  let tel = '121212121'
+
+  // 方法
+  const changeName = () => {
+    name = 'wang wang'
   }
-
+  const changeAge = () => {
+    age = '20'
+  }
+  const showTel = () => {
+    alert(tel)
+  }
 </script>
 
 <style lang="scss" scoped>
